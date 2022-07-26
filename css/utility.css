@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+}
+
+.direction-col{
+    flex-direction: column;
+}
+
+.center-items{
+    align-items: center;
+}
+
+.justify-around{
+   justify-content: space-around;
+}
+
+.justify-space{
+    justify-content: space-between;
+}
+
+.mx-1{
+    margin-left: 95px;
+}
+.mx-2{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.mx-3{
+    margin-top: 28px;
+}
+.mx-4{
+    margin-left: 30px;
+}
+.mx-5{
+    margin-left: 195px;
+}

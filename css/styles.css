@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+
+}
+
+ul li {
+    display: inline;
+    list-style: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+}
+
+ul {
+    margin-right: 56rem;
+    margin-top: 5px;
+}
+
+.btns {
+    margin-left: -182px;
+}
+
+.btn-1 {
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    font-family: 'Epilogue', sans-serif;
+    border: none;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.btn-2 {
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+    font-family: 'Epilogue', sans-serif;
+    border: 2px solid black;
+    padding: 8px 20px;
+    border-radius: 12px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.make {
+    margin-top: 140px;
+    font-size: 4.5rem;
+}
+
+.remote {
+    font-size: 4.5rem;
+}
+
+.topleft p {
+    color: hsl(0, 0%, 41%);
+    margin-left: 12.2rem;
+    margin-top: 59px;
+    line-height: 1.5;
+    width: 385px;
+}
+
+.btn-3 {
+    cursor: pointer;
+    font-family: 'Epilogue', sans-serif;
+    width: 138px;
+    height: 49px;
+    margin-top: 56px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+}
+
+
+.logos {
+    margin-top: 40px;
+}
+
+.topright img {
+     position: absolute;
+     right: 200px;
+    width: 441px;
+    height: 570px;
+}
+
+.attribution {
+    font-size: 10px;
+    margin-left: 650px;
+    margin-top: 25px;
+}
+
+li:hover,
+.btn-1:hover,
+.btn-2:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.btn-3:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+
+.features {
+    width: 126px;
+    height: 136px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 2;
+    position: relative;
+    right: 553px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.company {
+    width: 113px;
+    height: 127px;
+    border-radius: 8px;
+    background-color: white;
+    z-index: 5;
+    position: relative;
+    right: 420px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.company p {
+    color: hsl(0, 0%, 41%);
+    padding: 10px 19px;
+    font-size: 14px;
+}
+
+.features p {
+    color: hsl(0, 0%, 41%);
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+.features p img {
+    margin-right: 10px;
+}
+
+.showlink {
+   display: block;
+}
+
+.menu {
+    display: none;
+}
+
+.mobile-img img {
+    display: none;
+}
+
+.sidebar-show {
+    display: none;
+}
+
+/*Moblie screen Code*/
+
+@media (max-width: 1024px){
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    ul li , .topright img{
+        display: none;
+    }
+   
+    .menu {
+        display: block;
+        position: absolute;
+        left: 430px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .mobile-img img {
+        display: block;
+        width: 470px;
+        position: absolute;
+        top: 100px;
+        left: 12px;
+    }
+
+    .make,
+    .remote {
+        position: relative;
+        font-size: 40px;
+    }
+
+    .make {
+        top: 300px;
+        right: 150px;
+    }
+
+    .remote {
+        top: 258px;
+        right: 29px;
+    }
+
+    .topleft p {
+        position: relative;
+        top: 230px;
+        right: 150px;
+    }
+
+    .btn-3 {
+        position: relative;
+        top: 200px;
+    }
+
+    .logos img {
+        position: relative;
+        right: 180px;
+        top: 210px;
+
+    }
+
+    .maker {
+        width: 90px;
+        position: relative;
+        left: 160px;
+        margin-bottom: 50px;
+    }
+
+    .sidebar-show {
+        display: block;
+        position: fixed;
+        left: 290px;
+        top: 0.3px;
+        width: 250px;
+        height: 850px;
+        background-color: white;
+        margin: 0 auto 0 auto;
+        z-index: 4;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: all .6s ease;
+    }
+
+    .sidebar-close {
+        left: 500px;
+    }
+
+    .close-menu {
+        margin: 7px 0 7px 140px;
+        cursor: pointer;
+    }
+
+    .options {
+        cursor: pointer;
+        margin: 22px ;
+    }
+
+    .btn-4 {
+        background-color: white;
+        border: none;
+    }
+
+    .login-btn {
+        display: block;
+        margin: 40px 70px 10px;
+    }
+
+    .reg-btn {
+        margin: 10px 5px auto 20px;
+        padding: 8px 45px;
+        border-color: hsl(0, 0%, 41%);
+    }
+   
+  .features{
+    margin: 24px 10px auto 272px;
+    z-index: 6;
+  }
+  .company{
+    margin: 65px 20px auto 150px;
+    z-index: 10;
+}
+
+.features-click{
+    margin: 10px 10px 170px 10px;
+}
+
+.company-click{
+    margin: 12px 12px 170px 10px;
+    z-index: 6;
+  }
+}
